@@ -6,6 +6,9 @@ class ArraySwapper {
     int[] outputArray = new int[2];
 
     // put your code here
+    int temp = inputArray[0];
+    outputArray[0] = inputArray[1];
+    outputArray[1] = temp;
     
     return outputArray;
     
@@ -17,7 +20,6 @@ class ArraySwapper {
     
     int[] exampleInput = {1,2};
     int[] exampleOutput = testSwapper.arraySwap(exampleInput);
-    
     if (exampleInput[0] != exampleOutput[1] || exampleInput[1] != exampleOutput[0]) {
       System.out.println("Swap failed");
     } else {
